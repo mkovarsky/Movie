@@ -44,10 +44,16 @@ class RepositoryTest {
     }
 
     @Test
-    void ShouldfindById() {
+    void ShouldFindById() {
         MovieData actual = repository.findById(6);
         MovieData expected = new MovieData(6, "title6", "genre6");
         assertEquals(expected, actual);
+    }
+
+    @Test
+    void ShouldFindByIdReturnsNullIfIdDoesNotExist() {
+        MovieData actual = repository.findById(25);
+        assertEquals(null, actual);
     }
 
     @Test
