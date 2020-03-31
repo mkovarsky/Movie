@@ -75,4 +75,5 @@ class ManagerTest {
         assertArrayEquals(expected, actual);
 
     }
+
 }
