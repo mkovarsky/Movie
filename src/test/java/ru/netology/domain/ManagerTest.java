@@ -37,8 +37,6 @@ class ManagerTest {
         assertArrayEquals(expected, actual);
     }
 
-
-
     @Test
     void ShouldMoviesShownWhenFeedLengthEqualsDefault() {
         MovieData[] returned = new MovieData[]{first, second, third, fourth, fifth, sixth, seventh, eighth, ninth, tenth};
@@ -64,7 +62,5 @@ class ManagerTest {
         MovieData[] actual = manager.showAddedMovies(-1);
         MovieData[] expected = new MovieData[]{ninth, eighth, seventh, sixth, fifth, fourth, third, second, first};
         assertArrayEquals(expected, actual);
-
     }
-
 }

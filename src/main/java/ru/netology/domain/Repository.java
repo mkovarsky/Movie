@@ -62,5 +62,4 @@ public class Repository {
     void removeAll() {
         movies = new MovieData[0];
     }
-
 }
